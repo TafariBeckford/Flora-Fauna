@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane id="AnchorPane" prefHeight="531.0" prefWidth="1669.0" style="-fx-background-color: #e4f1fe;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fauna.FaunaController">
+   <children>
+      <Pane layoutX="-21.0" layoutY="-35.0" prefHeight="531.0" prefWidth="1411.0" style="-fx-background-color: #e4f1fe;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <JFXTextField fx:id="FUGN" layoutX="64.0" layoutY="185.0" prefHeight="25.0" prefWidth="142.0" promptText="Generic Name" />
+            <JFXTextField fx:id="FUSN" layoutX="64.0" layoutY="251.0" prefHeight="25.0" prefWidth="142.0" promptText="Scientific Name" />
+            <JFXTextField fx:id="FUID" layoutX="64.0" layoutY="109.0" prefHeight="25.0" prefWidth="142.0" promptText="Fauna ID" />
+            <JFXTextField fx:id="FUD" layoutX="64.0" layoutY="321.0" prefHeight="25.0" prefWidth="142.0" promptText="Description" />
+            <TableView fx:id="FATT" layoutX="520.0" layoutY="154.0" onMouseClicked="#VIEW" prefHeight="284.0" prefWidth="922.0">
+              <columns>
+                <TableColumn fx:id="FAID" prefWidth="54.0" text="ID" />
+                <TableColumn fx:id="FAGN" prefWidth="181.0" text="Generic Name" />
+                  <TableColumn fx:id="FASN" prefWidth="226.0" text="Scientific Name" />
+                  <TableColumn fx:id="FAD" prefWidth="252.0" text="Description" />
+                  <TableColumn fx:id="FID" prefWidth="208.0" text="Photo" />
+              </columns>
+            </TableView>
+            <JFXButton layoutX="65.0" layoutY="482.0" onAction="#FUINSERT" text="Insert" />
+            <JFXButton layoutX="135.0" layoutY="482.0" onAction="#FUPDATE" text="Update" />
+            <JFXButton layoutX="207.0" layoutY="482.0" onAction="#FDELETE" text="Delete" />
+            <ImageView fx:id="imageview" fitHeight="150.0" fitWidth="200.0" layoutX="300.0" layoutY="122.0" pickOnBounds="true" preserveRatio="true" />
+            <JFXButton layoutX="367.0" layoutY="296.0" onAction="#UPLOAD" text="Upload" />
+            <JFXButton layoutX="520.0" layoutY="122.0" onAction="#REFRESH" text="Refresh" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

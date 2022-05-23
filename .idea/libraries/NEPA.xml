@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="NEPA">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/NEPA/dist/NEPA.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
